@@ -18,8 +18,10 @@ export class CapacitorBrowser extends Browser {
 
         if(!Plugins.Browser)
             throw new Error("Capacitor Browser Is Undefined!");
-            
-        Plugins.Browser.open(options);
+
+        console.log('opening url');
+        window.open(url, '_blank');
+        // Plugins.Browser.open(options);
          
         return ;
     }    
