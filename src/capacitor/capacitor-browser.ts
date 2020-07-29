@@ -13,7 +13,7 @@ export class CapacitorBrowser extends Browser {
     public async showWindow(url: string, callbackUrl?: string): Promise<string | undefined> {
         let options : BrowserOpenOptions = {
             url : url,
-            windowName: '_self'
+            windowName: '_blank'
         };
 
         if(!Plugins.Browser)
